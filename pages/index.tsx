@@ -1,12 +1,13 @@
 import Link from "next/link";
+import toast from "react-hot-toast";
 
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Loader from "components/Loader";
 
 export default function Home() {
   return (
     <div>
-      <Loader show></Loader>
+      <button onClick={() => toast.success("hello toast!")}>Toast Me</button>
     </div>
   );
 }
